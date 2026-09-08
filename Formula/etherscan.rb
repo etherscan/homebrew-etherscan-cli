@@ -4,30 +4,30 @@
 class Etherscan < Formula
   desc "Command-line client and interactive explorer for the Etherscan V2 API"
   homepage "https://github.com/etherscan/etherscan-cli"
-  version "1.0.7"
+  version "1.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.7/etherscan_1.0.7_darwin_amd64.tar.gz"
-      sha256 "2327f066b04361c74d47647bce3f7b8673c55c74b3af1333f514c89ece41e82c"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.8/etherscan_1.0.8_darwin_amd64.tar.gz"
+      sha256 "adf19503884a240e3256703ab1b2c5efe135aa63f78d7afab041b8685e17c5ae"
     end
 
     if Hardware::CPU.arm?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.7/etherscan_1.0.7_darwin_arm64.tar.gz"
-      sha256 "f15a61c3dceb91d592de0ab0d27c93ef41ecf61d4b76bca8f2aa8a379cc57a04"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.8/etherscan_1.0.8_darwin_arm64.tar.gz"
+      sha256 "2438ea7f591188edcd00d7aca178aad7e075b1129b3a7701d351b9445774dc1c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.7/etherscan_1.0.7_linux_amd64.tar.gz"
-      sha256 "68fd2a681cc69e58da067453f63ad263f54a64ab534eee074f73c5b1d328b2bf"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.8/etherscan_1.0.8_linux_amd64.tar.gz"
+      sha256 "68b52966b1bee9479a399765d1ba7e8bae240e71027a63d46095b7f3fc3dc992"
     end
 
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.7/etherscan_1.0.7_linux_arm64.tar.gz"
-      sha256 "81f9efe78d36fb81a6113e9e036ddfc215702eb52eb40bf14f768508e06a99ac"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.0.8/etherscan_1.0.8_linux_arm64.tar.gz"
+      sha256 "e025705c7b20a8ee560dba36b243bcac4892b026335ef6fe78e470f04da3752a"
     end
   end
 
