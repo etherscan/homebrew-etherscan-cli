@@ -11,7 +11,7 @@ class Etherscan < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_darwin_amd64.tar.gz"
-      sha256 "ab26af07a5496a0292127c24eb031d9f11b024d19c4f9d97b208b6a7a5aeea84"
+      sha256 "09ab40fa3af035a792d35a1d6e8be17d7238bdb17e1c8596930e34c1f60d040b"
 
       define_method(:install) do
         bin.install "etherscan"
@@ -19,7 +19,7 @@ class Etherscan < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_darwin_arm64.tar.gz"
-      sha256 "0349009a3c227e14dedd0a7c20ae26ca2bafe3b791df0c2792e1164b3e59ecdf"
+      sha256 "82abf8f84c0a6ce033d4dd8f462bb4bca6b443d05f67c87330eee0763e91b77e"
 
       define_method(:install) do
         bin.install "etherscan"
@@ -30,14 +30,14 @@ class Etherscan < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_linux_amd64.tar.gz"
-      sha256 "f3b750fe1cc583169d351208851d47c23a8aac5bd41b873252df4a6f46033e6e"
+      sha256 "738625a2c00870f819b290e8e7dc63b432809717808226f84e060b70288333ac"
       define_method(:install) do
         bin.install "etherscan"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_linux_arm64.tar.gz"
-      sha256 "a308529abc05b8999a3079239b51d931a904fceabc0594a4a94c170d1217a666"
+      sha256 "8df93777e49093a2656f4f24882a87df50b955d61355a914ff504cb5b9bd017a"
       define_method(:install) do
         bin.install "etherscan"
       end
