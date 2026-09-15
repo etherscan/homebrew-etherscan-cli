@@ -21,4 +21,4 @@ To keep the currently installed version instead of upgrading it:
 brew pin etherscan
 ```
 
-See the Etherscan CLI's [full installation guide](https://github.com/etherscan/etherscan-cli#install) for other installation methods, documentation, and usage.
+See the Etherscan CLI's [full installation guide](https://github.com/etherscan/etherscan-cli#install) for other installation methods, documentation, and usage
