@@ -5,21 +5,21 @@
 class Etherscan < Formula
   desc "Command-line client and interactive explorer for the Etherscan V2 API"
   homepage "https://github.com/etherscan/etherscan-cli"
-  version "1.1.1"
+  version "1.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_darwin_amd64.tar.gz"
-      sha256 "09ab40fa3af035a792d35a1d6e8be17d7238bdb17e1c8596930e34c1f60d040b"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.2/etherscan_1.1.2_darwin_amd64.tar.gz"
+      sha256 "85d3dec684f659c4a63d25243998cf4b91fa34e29df24f22963f92c95c1b9547"
 
       define_method(:install) do
         bin.install "etherscan"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_darwin_arm64.tar.gz"
-      sha256 "82abf8f84c0a6ce033d4dd8f462bb4bca6b443d05f67c87330eee0763e91b77e"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.2/etherscan_1.1.2_darwin_arm64.tar.gz"
+      sha256 "b9f1c483b0c074857b8bea661f96297e61a9d0a5f05ad1d5a1df3da57fda71cb"
 
       define_method(:install) do
         bin.install "etherscan"
@@ -29,15 +29,15 @@ class Etherscan < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_linux_amd64.tar.gz"
-      sha256 "738625a2c00870f819b290e8e7dc63b432809717808226f84e060b70288333ac"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.2/etherscan_1.1.2_linux_amd64.tar.gz"
+      sha256 "2d7605eff7485691dd00f02e4772f175d2e77c53154292b21e2b2eac5244dbd8"
       define_method(:install) do
         bin.install "etherscan"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.1/etherscan_1.1.1_linux_arm64.tar.gz"
-      sha256 "8df93777e49093a2656f4f24882a87df50b955d61355a914ff504cb5b9bd017a"
+      url "https://github.com/etherscan/etherscan-cli/releases/download/v1.1.2/etherscan_1.1.2_linux_arm64.tar.gz"
+      sha256 "b4195a5874890f69e16228af1fb5cc3167f468e065de1bbf7d3f0d6c938761dd"
       define_method(:install) do
         bin.install "etherscan"
       end
